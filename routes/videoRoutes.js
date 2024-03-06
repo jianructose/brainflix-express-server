@@ -29,7 +29,6 @@ router.get("/", (req, res) => {
 });
 
 // GET /videos/:id responds with an object containing the details of the video with an id of :id.
-
 router.get("/:id", (req, res) => {
   // get the id from the request params
   const { id } = req.params;
@@ -39,7 +38,7 @@ router.get("/:id", (req, res) => {
   res.json(video);
 });
 
-// POST /videos that will add a new video to the video list. a unique id must be generated for each video uploaded. User only specify title and description, so the image must be provided the hard-coded image path for the video thumbnail on the front-end during the form submission within the request body.
+// POST /videos that will add a new video to the video list.
 router.post("/", (req, res) => {
   // get the title and description from the request body
   const { title, description } = req.body;
@@ -48,11 +47,16 @@ router.post("/", (req, res) => {
     id: uuidv4(), // generate a unique id
     title,
     channel: randomName,
-    image: "http://localhost:8080/images/image8.jpg",
+    image: "http://localhost:8080/images/Upload-video-preview.jpg",
     description,
     views: "0",
     likes: "0",
-    duration: "4:20",
+    // random duration between 0 and 10 minutes
+    duration: `${Math.floor(Math.random() * 30)}:${Math.floor(
+      Math.random() * 60
+    )
+      .toString()
+      .padStart(2, "0")}`,
     video: "https://unit-3-project-api-0a5620414506.herokuapp.com/stream",
     timestamp: Date.now(),
     comments: [],
@@ -69,6 +73,69 @@ router.post("/", (req, res) => {
 
   // respond with the new video details
   res.json(newVideo);
+});
+
+// POST /videos/:id/comments that will add a new comment to the video with the specified video id.
+
+router.post("/:id/comments", (req, res) => {
+  // get the id from the request params
+  const { id } = req.params;
+
+  // get the comment from the request body
+  const { comment } = req.body;
+
+  // find the video with the id
+  const video = videoDetailsArray.find((video) => video.id === id);
+
+  // create a new comment object
+  const newComment = {
+    name: randomName,
+    comment,
+    id: uuidv4(),
+    timestamp: Date.now(),
+  };
+
+  // add the new comment to the video comments array
+  video.comments.unshift(newComment);
+
+  // write the new video details array to the video-details.json file
+  fs.writeFileSync(
+    "./data/video-details.json",
+    JSON.stringify(videoDetailsArray, null, 2)
+  );
+
+  // respond with the new comment
+  res.json(newComment);
+});
+
+// DELETE /videos/:videoId/comments/:commentId that will delete the comment with the specified comment id from the video with the specified video id.
+
+router.delete("/:videoId/comments/:commentId", (req, res) => {
+  // get the video id and comment id from the req params
+  const { videoId, commentId } = req.params;
+
+  // find the video with the id
+  const video = videoDetailsArray.find((video) => video.id === videoId);
+
+  // find the comment with the comment id
+  const commentToDelete = video.comments.find(
+    (comment) => comment.id === commentId
+  );
+
+  // get the index of the comment
+  const idx = video.comments.indexOf(commentToDelete); // return -1 if not found
+
+  // remove the comment from the video comments array
+  video.comments.splice(idx, 1);
+
+  // write the new video details array to the video-details.json file
+  fs.writeFileSync(
+    ".data/video-details.json",
+    JSON.stringofy(videoDetailsArray, null, 2)
+  );
+
+  // respond with the deleted comment
+  res.json(commentToDelete);
 });
 
 module.exports = router; // export the router

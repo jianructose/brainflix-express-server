@@ -307,94 +307,23 @@
     "comments": []
   },
   {
-    "id": "92685048-d6a0-46b4-a9e1-f5b6b18f74e6",
-    "title": "test2",
-    "channel": "Hollow Amber",
-    "image": "http://localhost:8080/images/image8.jpg",
-    "description": "test2",
+    "id": "72db355c-7cc9-47e4-b0db-51d1c3ac38ca",
+    "title": "test11..",
+    "channel": "Welcome Red Elephant Chad",
+    "image": "http://localhost:8080/images/Upload-video-preview.jpg",
+    "description": "test11..",
     "views": "0",
     "likes": "0",
-    "duration": "4:20",
+    "duration": "13:55",
     "video": "https://unit-3-project-api-0a5620414506.herokuapp.com/stream",
-    "timestamp": 1709616401310,
-    "comments": []
-  },
-  {
-    "id": "f4d27056-36ce-4666-8759-ce9ae6e78932",
-    "title": "test3",
-    "channel": "Poor Tomato",
-    "image": "http://localhost:8080/images/image8.jpg",
-    "description": "test3",
-    "views": "0",
-    "likes": "0",
-    "duration": "4:20",
-    "video": "https://unit-3-project-api-0a5620414506.herokuapp.com/stream",
-    "timestamp": 1709616431578,
-    "comments": []
-  },
-  {
-    "id": "8f9923ce-4726-45c1-9e45-2d2e8307c81e",
-    "title": "test4",
-    "channel": "Distinct Beige",
-    "image": "http://localhost:8080/images/image8.jpg",
-    "description": "test4",
-    "views": "0",
-    "likes": "0",
-    "duration": "4:20",
-    "video": "https://unit-3-project-api-0a5620414506.herokuapp.com/stream",
-    "timestamp": 1709616443432,
-    "comments": []
-  },
-  {
-    "id": "96e5202d-5a3e-426d-880c-434a0d058a84",
-    "title": "test5",
-    "channel": "Coming Amber Platypus",
-    "image": "http://localhost:8080/images/image8.jpg",
-    "description": "test5",
-    "views": "0",
-    "likes": "0",
-    "duration": "4:20",
-    "video": "https://unit-3-project-api-0a5620414506.herokuapp.com/stream",
-    "timestamp": 1709616479251,
-    "comments": []
-  },
-  {
-    "id": "1d21336f-bb67-4059-af98-3e8332dd50ef",
-    "title": "test6",
-    "channel": "Obnoxious Red Haddock",
-    "image": "http://localhost:8080/images/image8.jpg",
-    "description": "test6",
-    "views": "0",
-    "likes": "0",
-    "duration": "4:20",
-    "video": "https://unit-3-project-api-0a5620414506.herokuapp.com/stream",
-    "timestamp": 1709616562747,
-    "comments": []
-  },
-  {
-    "id": "3560aeeb-6f02-4260-885a-b6987e07080f",
-    "title": "test0",
-    "channel": "Coherent Blue Albatross Belarus",
-    "image": "http://localhost:8080/images/image8.jpg",
-    "description": "test0",
-    "views": "0",
-    "likes": "0",
-    "duration": "4:20",
-    "video": "https://unit-3-project-api-0a5620414506.herokuapp.com/stream",
-    "timestamp": 1709616582347,
-    "comments": []
-  },
-  {
-    "id": "a790ff25-d8d8-4eaf-91f8-22bdc2a645cf",
-    "title": "test11",
-    "channel": "Grim Yellow Rabbit Zambia",
-    "image": "http://localhost:8080/images/image8.jpg",
-    "description": "test11",
-    "views": "0",
-    "likes": "0",
-    "duration": "4:20",
-    "video": "https://unit-3-project-api-0a5620414506.herokuapp.com/stream",
-    "timestamp": 1709616643359,
-    "comments": []
+    "timestamp": 1709701212656,
+    "comments": [
+      {
+        "name": "Invisible Fuchsia Duck Serbia",
+        "comment": "I really enjoyed this video! Thanks for posting",
+        "id": "3c60d4fa-fca2-4d49-9589-17dae8291630",
+        "timestamp": 1709701378538
+      }
+    ]
   }
 ]
