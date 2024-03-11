@@ -10,10 +10,16 @@ const {
   countries,
 } = require("unique-names-generator"); // generate a unique name for each video channel
 
-const randomName = uniqueNamesGenerator({
-  dictionaries: [adjectives, colors, animals, countries],
-  length: 4,
+const randomAnimal = uniqueNamesGenerator({
+  dictionaries: [adjectives, colors, animals],
+  length: 3,
   separator: " ",
+  style: "capital",
+});
+
+const randomCountry = uniqueNamesGenerator({
+  dictionaries: [countries],
+  length: 1,
   style: "capital",
 });
 
@@ -46,7 +52,7 @@ router.post("/", (req, res) => {
   const newVideo = {
     id: uuidv4(), // generate a unique id
     title,
-    channel: randomName,
+    channel: `${randomAnimal} @${randomCountry}`,
     image: "http://localhost:8080/images/Upload-video-preview.jpg",
     description,
     views: "0",
@@ -77,7 +83,6 @@ router.post("/", (req, res) => {
 });
 
 // POST /videos/:id/comments that will add a new comment to the video with the specified video id.
-
 router.post("/:id/comments", (req, res) => {
   // get the id from the request params
   const { id } = req.params;
@@ -91,7 +96,7 @@ router.post("/:id/comments", (req, res) => {
   // create a new comment object
   const newComment = {
     id: uuidv4(),
-    name: randomName,
+    name: `${randomAnimal} @${randomCountry}`,
     comment,
     likes: 0,
     timestamp: Date.now(),
@@ -111,7 +116,6 @@ router.post("/:id/comments", (req, res) => {
 });
 
 // DELETE /videos/:videoId/comments/:commentId that will delete the comment with the specified comment id from the video with the specified video id.
-
 router.delete("/:videoId/comments/:commentId", (req, res) => {
   // get the video id and comment id from the req params
   const { videoId, commentId } = req.params;
@@ -136,8 +140,8 @@ router.delete("/:videoId/comments/:commentId", (req, res) => {
     JSON.stringify(videoDetailsArray, null, 2)
   );
 
-  // respond with the deleted comment
-  res.json(commentToDelete);
+  // respond with the updated video details
+  res.json(video);
 });
 
 module.exports = router; // export the router
