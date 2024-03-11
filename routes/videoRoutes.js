@@ -57,7 +57,8 @@ router.post("/", (req, res) => {
     )
       .toString()
       .padStart(2, "0")}`,
-    video: "https://unit-3-project-api-0a5620414506.herokuapp.com/stream",
+    video:
+      "https://unit-3-project-api-0a5620414506.herokuapp.com/stream?api_key=9e7356d6-6bef-4279-aa6a-97eaa4015029",
     timestamp: Date.now(),
     comments: [],
   };
@@ -89,13 +90,14 @@ router.post("/:id/comments", (req, res) => {
 
   // create a new comment object
   const newComment = {
+    id: uuidv4(),
     name: randomName,
     comment,
-    id: uuidv4(),
+    likes: 0,
     timestamp: Date.now(),
   };
 
-  // add the new comment to the video comments array
+  // add the new comment to the top of the video comments array
   video.comments.unshift(newComment);
 
   // write the new video details array to the video-details.json file
@@ -104,7 +106,7 @@ router.post("/:id/comments", (req, res) => {
     JSON.stringify(videoDetailsArray, null, 2)
   );
 
-  // respond with the new comment
+  // respond with the new commemt under the video
   res.json(newComment);
 });
 
@@ -130,8 +132,8 @@ router.delete("/:videoId/comments/:commentId", (req, res) => {
 
   // write the new video details array to the video-details.json file
   fs.writeFileSync(
-    ".data/video-details.json",
-    JSON.stringofy(videoDetailsArray, null, 2)
+    "./data/video-details.json",
+    JSON.stringify(videoDetailsArray, null, 2)
   );
 
   // respond with the deleted comment

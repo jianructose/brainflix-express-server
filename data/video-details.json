@@ -8,7 +8,7 @@
     "views": "980,544",
     "likes": "22,479",
     "duration": "4:01",
-    "video": "https://unit-3-project-api-0a5620414506.herokuapp.com/stream",
+    "video": "https://unit-3-project-api-0a5620414506.herokuapp.com/stream?api_key=9e7356d6-6bef-4279-aa6a-97eaa4015029",
     "timestamp": 1691471862000,
     "comments": [
       {
@@ -43,7 +43,7 @@
     "views": "809,635",
     "likes": "400,058",
     "duration": "12:26",
-    "video": "https://unit-3-project-api-0a5620414506.herokuapp.com/stream",
+    "video": "https://unit-3-project-api-0a5620414506.herokuapp.com/stream?api_key=9e7356d6-6bef-4279-aa6a-97eaa4015029",
     "timestamp": 1690089462000,
     "comments": [
       {
@@ -78,7 +78,7 @@
     "views": "1,261,703",
     "likes": "729,753",
     "duration": "26:13",
-    "video": "https://unit-3-project-api-0a5620414506.herokuapp.com/stream",
+    "video": "https://unit-3-project-api-0a5620414506.herokuapp.com/stream?api_key=9e7356d6-6bef-4279-aa6a-97eaa4015029",
     "timestamp": 1700374662000,
     "comments": [
       {
@@ -113,7 +113,7 @@
     "views": "739,945",
     "likes": "198,352",
     "duration": "8:34",
-    "video": "https://unit-3-project-api-0a5620414506.herokuapp.com/stream",
+    "video": "https://unit-3-project-api-0a5620414506.herokuapp.com/stream?api_key=9e7356d6-6bef-4279-aa6a-97eaa4015029",
     "timestamp": 1676182662000,
     "comments": [
       {
@@ -148,7 +148,7 @@
     "views": "72,342",
     "likes": "8,785",
     "duration": "45:59",
-    "video": "https://unit-3-project-api-0a5620414506.herokuapp.com/stream",
+    "video": "https://unit-3-project-api-0a5620414506.herokuapp.com/stream?api_key=9e7356d6-6bef-4279-aa6a-97eaa4015029",
     "timestamp": 1677910662000,
     "comments": [
       {
@@ -176,7 +176,7 @@
     "views": "1,385,387",
     "likes": "576,588",
     "duration": "47:26",
-    "video": "https://unit-3-project-api-0a5620414506.herokuapp.com/stream",
+    "video": "https://unit-3-project-api-0a5620414506.herokuapp.com/stream?api_key=9e7356d6-6bef-4279-aa6a-97eaa4015029",
     "timestamp": 1680067062000,
     "comments": [
       {
@@ -211,7 +211,7 @@
     "views": "252,796",
     "likes": "4,905",
     "duration": "7:31",
-    "video": "https://unit-3-project-api-0a5620414506.herokuapp.com/stream",
+    "video": "https://unit-3-project-api-0a5620414506.herokuapp.com/stream?api_key=9e7356d6-6bef-4279-aa6a-97eaa4015029",
     "timestamp": 1692767862000,
     "comments": [
       {
@@ -246,7 +246,7 @@
     "views": "129,984",
     "likes": "62,552",
     "duration": "26:52",
-    "video": "https://unit-3-project-api-0a5620414506.herokuapp.com/stream",
+    "video": "https://unit-3-project-api-0a5620414506.herokuapp.com/stream?api_key=9e7356d6-6bef-4279-aa6a-97eaa4015029",
     "timestamp": 1698211062000,
     "comments": [
       {
@@ -274,7 +274,7 @@
     "views": "3,092,284",
     "likes": "75,985",
     "duration": "49:20",
-    "video": "https://unit-3-project-api-0a5620414506.herokuapp.com/stream",
+    "video": "https://unit-3-project-api-0a5620414506.herokuapp.com/stream?api_key=9e7356d6-6bef-4279-aa6a-97eaa4015029",
     "timestamp": 1701497862000,
     "comments": [
       {
@@ -302,7 +302,7 @@
     "views": "0",
     "likes": "0",
     "duration": "4:20",
-    "video": "https://unit-3-project-api-0a5620414506.herokuapp.com/stream",
+    "video": "https://unit-3-project-api-0a5620414506.herokuapp.com/stream?api_key=9e7356d6-6bef-4279-aa6a-97eaa4015029",
     "timestamp": 1709615442678,
     "comments": []
   },
@@ -315,7 +315,7 @@
     "views": "0",
     "likes": "0",
     "duration": "13:55",
-    "video": "https://unit-3-project-api-0a5620414506.herokuapp.com/stream",
+    "video": "https://unit-3-project-api-0a5620414506.herokuapp.com/stream?api_key=9e7356d6-6bef-4279-aa6a-97eaa4015029",
     "timestamp": 1709701212656,
     "comments": [
       {
@@ -335,8 +335,21 @@
     "views": "0",
     "likes": "0",
     "duration": "4:44",
-    "video": "https://unit-3-project-api-0a5620414506.herokuapp.com/stream",
+    "video": "https://unit-3-project-api-0a5620414506.herokuapp.com/stream?api_key=9e7356d6-6bef-4279-aa6a-97eaa4015029",
     "timestamp": 1709943746179,
+    "comments": []
+  },
+  {
+    "id": "835deed8-2bf4-410d-a9c6-2d777f674801",
+    "title": "1736test",
+    "channel": "Explicit Violet Tarsier Norway",
+    "image": "http://localhost:8080/images/Upload-video-preview.jpg",
+    "description": "1736test",
+    "views": "0",
+    "likes": "0",
+    "duration": "27:09",
+    "video": "https://unit-3-project-api-0a5620414506.herokuapp.com/stream?api_key=9e7356d6-6bef-4279-aa6a-97eaa4015029",
+    "timestamp": 1710117401506,
     "comments": []
   }
 ]
