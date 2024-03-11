@@ -24,7 +24,7 @@ const videoDetailsArray = JSON.parse(videoDetails);
 
 // GET /videos responds woth an array of videos
 router.get("/", (req, res) => {
-  // respond with the video details
+  // res.json to send the video details array as a JSON response
   res.json(videoDetailsArray);
 });
 
